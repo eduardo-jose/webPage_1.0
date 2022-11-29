@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "eduardo",
+        "lastname": "contreras",
+        "emai": "eduardo@mail.com",
+        "birthday": "25/10/1999"
+    },
+    {
+        "id": 2,
+        "name": "jose",
+        "lastname": "lugo",
+        "emai": "jose@mail.com",
+        "birthday": "17/08/1991"
+    },
+    {
+        "id": 3,
+        "name": "maria",
+        "lastname": "leal",
+        "emai": "maria@mail.com",
+        "birthday": "30/03/1998"
+    },
+    {
+        "id": 4,
+        "name": "esther",
+        "lastname": "zerpa",
+        "emai": "esther@mail.com",
+        "birthday": "07/12/1997"
+    }
+]
