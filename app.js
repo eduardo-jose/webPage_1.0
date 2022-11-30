@@ -17,7 +17,7 @@ app.get('/api/data', (req, res) => {
 
 app.get('/api/data/:nombre', (req, res) => {
   const { nombre } = req.params;
-  const resultado = data.filter((person) => person.name === nombre);
+  const resultado = data.filter((person) => person.name === nombre || person.lastname === nombre);
   if (resultado.length === 0) {
     res.send(`No se encontraron resultados para ${nombre.toLocaleUpperCase()}`).status(404);
   }
