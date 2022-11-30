@@ -15,13 +15,14 @@ app.get('/api/data', (req, res) => {
   res.send(data);
 });
 
-// app.get('/api/data/:id', (req, res) => {
-//   const { id } = req.params;
-//   const indice = data.findIndex((person) => person.id == id);
-//   if (indice >= 0) {
-//     res.send(indice).status(200);
-//   }
-// });
+app.get('/api/data/:nombre', (req, res) => {
+  const { nombre } = req.params;
+  const resultado = data.filter((person) => person.name === nombre);
+  if (resultado.length === 0) {
+    res.send(`No se encontraron resultados para ${nombre.toLocaleUpperCase()}`).status(404);
+  }
+  res.send(resultado);
+});
 
 const PORT = 3000;
 
